@@ -2,63 +2,53 @@
 
 **Module:** WEDE5020 – Web Development  
 **Student number:** ST10502124  
-**Project name:** Fresh Bites Bakery  
-**Project type:** Responsive bakery website
+**Project:** Fresh Bites Bakery  
+**Website type:** Responsive front-end bakery website
 
 ## 1. Project overview
 
-Fresh Bites Bakery is a website developed to give customers information about the bakery, introduce its products and make it easier for visitors to contact the business or submit an enquiry.
+Fresh Bites Bakery is a front-end website concept that introduces the bakery, displays product categories and gives visitors ways to make product enquiries or send general messages. The design uses a warm bakery-inspired colour palette, clear page layouts and responsive navigation.
 
-The website is designed to be simple to navigate, visually consistent and usable on desktop, tablet and mobile devices. It uses HTML5, CSS3 and JavaScript. The project is managed using GitHub so that changes can be tracked during development.
+The website is built with HTML5, CSS3 and JavaScript. The source files are organised into separate page, stylesheet and script files so that the project is easier to maintain.
 
-## 2. Project objectives
+## 2. Website pages
 
-The main objectives are to:
-
-- Present the bakery and its products in a clear and attractive way.
-- Provide easy navigation between the main website pages.
-- Allow visitors to send product enquiries and general messages.
-- Use responsive layouts for different screen sizes.
-- Include useful JavaScript interactions and form validation.
-- Apply basic search-engine optimisation (SEO).
-- Keep the source code organised and documented.
-
-## 3. Website pages
-
-| Page | File | Purpose |
+| Page | File | Description |
 |---|---|---|
-| Home | `index.html` | Introduces the bakery and highlights important information. |
-| About | `about.html` | Gives background information about the bakery. |
-| Products | `products.html` | Displays the bakery's products and descriptions. |
-| Enquiry | `enquiry.html` | Allows visitors to ask about products or services. |
-| Contact | `contact.html` | Provides contact information and a general message form. |
+| Home | `index.html` | Introduces Fresh Bites Bakery and links visitors to the main sections. |
+| Our Story | `about.html` | Explains the bakery's approach and includes an FAQ accordion. |
+| Products | `products.html` | Displays product categories with a search field and category filter. |
+| Enquiries | `enquiry.html` | Collects details about a product or special-order enquiry. |
+| Contact | `contact.html` | Provides a general contact message form. |
 
-## 4. Technologies used
+## 3. Technologies
 
-- **HTML5:** structures the pages and provides semantic elements and form fields.
-- **CSS3:** controls colours, typography, spacing, layout and responsive design.
-- **JavaScript:** adds client-side interaction, DOM updates and form validation.
-- **Git and GitHub:** store the project and track development changes.
-- **Leaflet (if included):** displays an interactive map using OpenStreetMap data.
+- **HTML5** for semantic page structure, navigation and forms.
+- **CSS3** for the visual design, responsive layouts and mobile styling.
+- **JavaScript** for the mobile navigation, FAQ accordion, product filtering, enquiry prefill and client-side form validation.
+- **GitHub** for source-code hosting and version control.
 
-## 5. Main functionality
+## 4. Features implemented
 
-The following features should be checked in the actual website before submission. Remove or change any item that is not present in the final version.
+- Shared navigation and footer across the five pages.
+- Responsive layouts with a mobile navigation menu.
+- Product search by name and filtering by category.
+- FAQ accordion on the Our Story page.
+- Product links that prefill the product field on the enquiry form.
+- Required-field, email and minimum-length browser validation.
+- Page-specific titles and meta descriptions.
+- Semantic landmarks, form labels, skip link and accessible status messages.
+- Reduced-motion support in the stylesheet.
 
-- Consistent navigation between the website pages.
-- Responsive layout for desktop and smaller screens.
-- Product information and images with descriptive alternative text.
-- JavaScript interactions such as a mobile navigation menu, accordion or image gallery, where included.
-- Enquiry and contact forms with required-field checks and clear validation messages.
-- Product search, filtering or sorting, if implemented.
-- SEO information including page titles, meta descriptions, meaningful headings and internal links.
-- A sitemap and robots file, if included in the final project.
+Product illustrations currently use emoji and CSS styling. Replace or supplement these with suitable original bakery photographs or illustrations if available, and provide descriptive alternative text for meaningful images.
 
-**Form submission note:** Browser-side validation does not automatically send an email. A working form delivery service or server-side endpoint must be configured and tested before the forms can be described as sending messages.
+## 5. Important form limitation
 
-## 6. Folder and file structure
+The enquiry and contact forms currently perform **browser-side validation only**. They display a message explaining that the details passed validation, but they are not connected to an email inbox or server-side form service. The forms therefore do not send or store real submissions yet.
 
-Keep the website files in one main project folder. A recommended structure is:
+Before using the website for real customers, connect a form service or server endpoint, configure its destination and test successful delivery. Do not describe the forms as sending email until that has been done.
+
+## 6. Project structure
 
 ```text
 Fresh-Bites-Bakery/
@@ -71,102 +61,88 @@ Fresh-Bites-Bakery/
 │   └── style.css
 ├── js/
 │   └── script.js
-├── images/
-│   └── (website image files)
 ├── robots.txt
-├── sitemap.xml
 └── README.md
 ```
 
-Use the filenames and folder names that match the actual project. Do not create empty files just to make the folder look complete.
+## 7. Running the website
 
-## 7. How to run the website
-
-1. Download the repository or clone it to your computer.
-2. If the website files are supplied in a ZIP archive, extract the archive.
-3. Open the extracted project folder in Visual Studio Code or another code editor.
-4. Open `index.html` in a web browser. A local development server may also be used.
-5. Use the navigation links to open every page.
-6. Test the forms, interactive features and responsive layout.
-
-Some online features, such as map tiles or hosted form delivery, require an internet connection and correct configuration.
+1. Clone or download this repository.
+2. Open the project folder in Visual Studio Code or another code editor.
+3. Open `index.html` in a web browser, or run the folder using a local development server.
+4. Navigate through all five pages.
+5. Try the mobile menu, FAQ accordion, product search and category filter.
+6. Test both forms using valid and invalid details. Remember that form validation is not the same as sending a message.
 
 ## 8. Testing checklist
 
-Before submitting, test the following:
+- [ ] Open all five pages and check that navigation works.
+- [ ] Check the layout at desktop, tablet and mobile widths.
+- [ ] Test the mobile menu and FAQ accordion.
+- [ ] Search for a product and change the category filter.
+- [ ] Select a product enquiry link and check that the enquiry field is prefilled.
+- [ ] Test required fields and invalid email addresses on both forms.
+- [ ] Check for spelling mistakes and replace any placeholder business information.
+- [ ] Connect and test a real form-submission service before launch.
+- [ ] Add a sitemap after the final public website URL is known.
+- [ ] Deploy the website and test the live version.
 
-- [ ] All five pages open without errors.
-- [ ] Navigation links lead to the correct pages.
-- [ ] Images load and have useful alt text.
-- [ ] The layout works at desktop and mobile widths.
-- [ ] Buttons, menus and JavaScript interactions work.
-- [ ] Forms show useful messages when required information is missing.
-- [ ] Form submission has been tested using the configured delivery method.
-- [ ] There are no obvious spelling mistakes or placeholder details.
-- [ ] Page titles and meta descriptions are relevant.
-- [ ] The sitemap and robots file, if included, contain the correct website address.
-- [ ] The deployed website opens using its public URL.
+## 9. Uploading and version control
 
-## 9. GitHub upload and version control
+The repository should contain the actual website source files and folders, not only a ZIP archive.
 
-The project should be uploaded with its actual source files and folders, not only as a ZIP archive.
+1. Clone the repository or open it in GitHub Desktop.
+2. Copy the website files into the repository folder, keeping the folder structure shown above.
+3. Review the changed files.
+4. Commit related changes using clear messages.
+5. Push the commits to GitHub.
+6. Open the repository in a browser and confirm that each source file is visible.
 
-1. Open the GitHub repository on your computer using GitHub Desktop, or clone it using Git.
-2. Extract the website ZIP file.
-3. Open the extracted folder and copy the website source files and folders into the repository folder.
-4. Make sure `index.html`, the other HTML pages, `css`, `js` and `images` are visible in the repository.
-5. Review the changed files before committing.
-6. Use a descriptive commit message that explains the changes.
-7. Commit the changes and push them to GitHub.
-8. Open the repository in a browser and check that the files are visible.
+Suggested commit messages for future changes:
 
-Suggested commit messages (use only when the relevant work has actually been done):
+- `feat: add bakery website pages`
+- `style: add responsive bakery website styling`
+- `feat: add product filtering and form validation`
+- `docs: update website setup and testing information`
+- `seo: add sitemap for deployed website`
 
-- `feat: add bakery website pages and content`
-- `style: improve responsive layout and visual consistency`
-- `feat: add JavaScript interactions and form validation`
-- `seo: add page metadata and search engine files`
-- `docs: update project README and testing notes`
+Only use a commit message when the change described has actually been made.
 
 ## 10. Deployment
 
-The website can be hosted using GitHub Pages or Netlify.
+The website can be deployed using GitHub Pages or Netlify.
 
 For GitHub Pages:
-1. Open the repository on GitHub.
-2. Select **Settings**, then **Pages**.
-3. Under the build and deployment section, select deployment from the `main` branch and the root folder.
-4. Save the settings.
-5. Wait for the published URL to appear, then open it and test the website.
+1. Open the repository's **Settings** page.
+2. Select **Pages**.
+3. Choose deployment from the `main` branch and the root folder.
+4. Save and wait for GitHub Pages to publish the site.
+5. Open the published address and test all pages and links.
 
-For Netlify, sign in, choose the option to add a site from an existing Git repository, connect the GitHub repository and follow the deployment instructions. Confirm that the published site loads correctly.
+**Live website URL:** Add the published URL after deployment.
 
-Add the final public website URL here once deployment is complete:
-
-**Live website URL:** To be added after deployment.
+A sitemap needs the final public domain so that its page addresses are absolute and correct. Add `sitemap.xml` after deployment and then update `robots.txt` with the sitemap URL.
 
 ## 11. Changelog
 
-| Version | Changes |
+| Date | Update |
 |---|---|
-| Initial project | Created the bakery website pages and initial styling. |
-| Development update | Expanded the project documentation, added setup instructions, a file structure, testing checklist and GitHub upload guidance. |
-| Future updates | Record each completed feature, correction or design change here with its date. |
+| 2 November 2026 | Added the five website pages, shared responsive stylesheet, JavaScript navigation, FAQ accordion, product search/filter and browser-side form validation. |
+| 2 November 2026 | Rewrote the project README with setup, features, limitations, testing, upload and deployment information. |
 
-Update this table whenever changes are made. The changelog should describe work that is actually present in the repository.
+Add a new entry whenever further changes are made.
 
 ## 12. References
 
-List every external source that was actually used for code, learning, images, fonts, icons or libraries. The following official resources can be used as references when relevant:
+Add the sources actually consulted during development, including the date accessed. These official learning resources are useful references:
 
-- MDN Web Docs. HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
-- MDN Web Docs. CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
-- MDN Web Docs. JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-- Google Search Central. SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
-- Leaflet. Documentation: https://leafletjs.com/reference.html (only if Leaflet is used)
+- MDN Web Docs – HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
+- MDN Web Docs – CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
+- MDN Web Docs – JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- Google Search Central – SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 
-Add the date accessed and any other sources used, and acknowledge third-party images or assets where required.
+The stylesheet imports the DM Sans and Playfair Display fonts from Google Fonts. Acknowledge any additional images, icons, code examples or third-party assets added to the project.
 
 ## 13. Academic integrity
 
-This project should represent the student's own understanding and development work. External sources, code examples, libraries and media assets must be acknowledged. Test and understand the code included in the final submission, and ensure that the documentation accurately describes the website that has been completed.
+The final submission should reflect the student's understanding of the website. Review and test the source code before submission. Acknowledge external resources and make sure that this README describes the features and limitations of the version actually uploaded.
