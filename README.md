@@ -1,106 +1,172 @@
-# Fresh Bites Bakery – WEDE5020 POE
+# Fresh Bites Bakery Website
 
-**Student number:** ST10502124  
 **Module:** WEDE5020 – Web Development  
-**Project:** Fresh Bites Bakery website  
-**Assessment stage:** Part 2 foundation and Part 3 development
+**Student number:** ST10502124  
+**Project name:** Fresh Bites Bakery  
+**Project type:** Responsive bakery website
 
-## Project overview
+## 1. Project overview
 
-Fresh Bites Bakery is a website project created for the WEDE5020 Web Development Portfolio of Evidence. The website is intended to introduce the bakery, provide information about its products, and allow visitors to make enquiries or contact the business.
+Fresh Bites Bakery is a website developed to give customers information about the bakery, introduce its products and make it easier for visitors to contact the business or submit an enquiry.
 
-The Part 3 work builds on the existing Part 2 website rather than replacing the earlier assessment. The aim is to improve the website's functionality, usability, consistency, accessibility, documentation and search-engine readiness.
+The website is designed to be simple to navigate, visually consistent and usable on desktop, tablet and mobile devices. It uses HTML5, CSS3 and JavaScript. The project is managed using GitHub so that changes can be tracked during development.
 
-## Website pages
+## 2. Project objectives
 
-The website is planned around the following pages:
+The main objectives are to:
 
-- **Home (index.html)** – bakery introduction and key information.
-- **About (about.html)** – background and information about the bakery.
-- **Products (products.html)** – bakery products and related information.
-- **Enquiry (enquiry.html)** – product or service enquiry form.
-- **Contact (contact.html)** – contact details and general message form.
+- Present the bakery and its products in a clear and attractive way.
+- Provide easy navigation between the main website pages.
+- Allow visitors to send product enquiries and general messages.
+- Use responsive layouts for different screen sizes.
+- Include useful JavaScript interactions and form validation.
+- Apply basic search-engine optimisation (SEO).
+- Keep the source code organised and documented.
 
-## Technologies
+## 3. Website pages
 
-The project uses front-end web technologies:
+| Page | File | Purpose |
+|---|---|---|
+| Home | `index.html` | Introduces the bakery and highlights important information. |
+| About | `about.html` | Gives background information about the bakery. |
+| Products | `products.html` | Displays the bakery's products and descriptions. |
+| Enquiry | `enquiry.html` | Allows visitors to ask about products or services. |
+| Contact | `contact.html` | Provides contact information and a general message form. |
 
-- HTML5 for page structure and forms.
-- CSS3 for layout, responsive styling and visual presentation.
-- JavaScript for interactive behaviour and client-side validation.
-- Git and GitHub for version control and project documentation.
+## 4. Technologies used
 
-## Part 3 development objectives
+- **HTML5:** structures the pages and provides semantic elements and form fields.
+- **CSS3:** controls colours, typography, spacing, layout and responsive design.
+- **JavaScript:** adds client-side interaction, DOM updates and form validation.
+- **Git and GitHub:** store the project and track development changes.
+- **Leaflet (if included):** displays an interactive map using OpenStreetMap data.
 
-The following items form the Part 3 improvement checklist. They should only be marked as complete after they have been implemented and tested.
+## 5. Main functionality
 
-- [ ] Apply the lecturer's Part 2 feedback.
-- [ ] Improve consistency across page layouts, typography, colours and spacing.
-- [ ] Add useful JavaScript interactions, such as an accessible accordion, tabs or gallery lightbox where appropriate.
-- [ ] Add dynamic product content and useful search, filtering or sorting where appropriate.
-- [ ] Add and test enquiry and contact form validation with clear error messages.
-- [ ] Configure a working form-submission method and verify where submissions are delivered.
-- [ ] Improve page titles, meta descriptions, heading structure, image alt text and internal links.
-- [ ] Add and verify robots.txt and sitemap.xml.
-- [ ] Check responsive behaviour, accessibility basics and page performance.
-- [ ] Test the website on desktop and mobile screen sizes.
-- [ ] Deploy the finished website and record the live URL.
+The following features should be checked in the actual website before submission. Remove or change any item that is not present in the final version.
 
-## Running the website locally
+- Consistent navigation between the website pages.
+- Responsive layout for desktop and smaller screens.
+- Product information and images with descriptive alternative text.
+- JavaScript interactions such as a mobile navigation menu, accordion or image gallery, where included.
+- Enquiry and contact forms with required-field checks and clear validation messages.
+- Product search, filtering or sorting, if implemented.
+- SEO information including page titles, meta descriptions, meaningful headings and internal links.
+- A sitemap and robots file, if included in the final project.
 
-1. Download or clone this repository.
-2. Extract the project files if they are supplied as an archive.
-3. Open the project folder in a code editor such as Visual Studio Code.
-4. Open index.html in a browser, or use a local development server.
-5. Test the navigation and each page. Form delivery and map integrations may require an online deployment and the correct service configuration.
+**Form submission note:** Browser-side validation does not automatically send an email. A working form delivery service or server-side endpoint must be configured and tested before the forms can be described as sending messages.
 
-## Repository structure
+## 6. Folder and file structure
 
-The intended source layout is:
+Keep the website files in one main project folder. A recommended structure is:
 
-    Fresh-Bites-Bakery/
-    ├── index.html
-    ├── about.html
-    ├── products.html
-    ├── enquiry.html
-    ├── contact.html
-    ├── css/
-    │   └── style.css
-    ├── js/
-    │   └── script.js
-    ├── images/
-    ├── robots.txt
-    ├── sitemap.xml
-    └── README.md
+```text
+Fresh-Bites-Bakery/
+├── index.html
+├── about.html
+├── products.html
+├── enquiry.html
+├── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+│   └── (website image files)
+├── robots.txt
+├── sitemap.xml
+└── README.md
+```
 
-The exact contents may change as Part 3 development progresses.
+Use the filenames and folder names that match the actual project. Do not create empty files just to make the folder look complete.
 
-## Lecturer feedback and response
+## 7. How to run the website
 
-The Part 2 feedback highlighted the need for more detailed GitHub commits, a fuller README, consistent styling and avoiding generic stock imagery.
+1. Download the repository or clone it to your computer.
+2. If the website files are supplied in a ZIP archive, extract the archive.
+3. Open the extracted project folder in Visual Studio Code or another code editor.
+4. Open `index.html` in a web browser. A local development server may also be used.
+5. Use the navigation links to open every page.
+6. Test the forms, interactive features and responsive layout.
 
-The Part 3 response is to document the project properly, use descriptive commits that explain actual changes, keep the visual design consistent, and retain or use original project imagery where suitable. Any new images should be relevant to the bakery and have meaningful alternative text.
+Some online features, such as map tiles or hosted form delivery, require an internet connection and correct configuration.
 
-## Changelog
+## 8. Testing checklist
 
-### Part 3 – development in progress
+Before submitting, test the following:
 
-- Expanded the project documentation to explain the website, technologies, planned improvements and testing process.
-- Recorded the Part 2 feedback and the actions planned to address it.
-- Added a checklist so that implementation and testing progress can be tracked honestly.
+- [ ] All five pages open without errors.
+- [ ] Navigation links lead to the correct pages.
+- [ ] Images load and have useful alt text.
+- [ ] The layout works at desktop and mobile widths.
+- [ ] Buttons, menus and JavaScript interactions work.
+- [ ] Forms show useful messages when required information is missing.
+- [ ] Form submission has been tested using the configured delivery method.
+- [ ] There are no obvious spelling mistakes or placeholder details.
+- [ ] Page titles and meta descriptions are relevant.
+- [ ] The sitemap and robots file, if included, contain the correct website address.
+- [ ] The deployed website opens using its public URL.
 
-Further entries should be added as individual features are completed. Commit messages should describe the actual work included in each commit.
+## 9. GitHub upload and version control
 
-## References
+The project should be uploaded with its actual source files and folders, not only as a ZIP archive.
 
-Add the exact sources used during development here, including tutorials, documentation, image sources and third-party libraries. Examples of official documentation that may be useful:
+1. Open the GitHub repository on your computer using GitHub Desktop, or clone it using Git.
+2. Extract the website ZIP file.
+3. Open the extracted folder and copy the website source files and folders into the repository folder.
+4. Make sure `index.html`, the other HTML pages, `css`, `js` and `images` are visible in the repository.
+5. Review the changed files before committing.
+6. Use a descriptive commit message that explains the changes.
+7. Commit the changes and push them to GitHub.
+8. Open the repository in a browser and check that the files are visible.
 
-- MDN Web Docs – HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
-- MDN Web Docs – CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
-- MDN Web Docs – JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-- Google Search Central – SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
-- Leaflet documentation (only if Leaflet is used): https://leafletjs.com/reference.html
+Suggested commit messages (use only when the relevant work has actually been done):
 
-## Academic integrity
+- `feat: add bakery website pages and content`
+- `style: improve responsive layout and visual consistency`
+- `feat: add JavaScript interactions and form validation`
+- `seo: add page metadata and search engine files`
+- `docs: update project README and testing notes`
 
-This repository records the development of the student's own WEDE5020 project. Any external code, images, libraries or learning resources used should be acknowledged in the relevant source files and in the references section.
+## 10. Deployment
+
+The website can be hosted using GitHub Pages or Netlify.
+
+For GitHub Pages:
+1. Open the repository on GitHub.
+2. Select **Settings**, then **Pages**.
+3. Under the build and deployment section, select deployment from the `main` branch and the root folder.
+4. Save the settings.
+5. Wait for the published URL to appear, then open it and test the website.
+
+For Netlify, sign in, choose the option to add a site from an existing Git repository, connect the GitHub repository and follow the deployment instructions. Confirm that the published site loads correctly.
+
+Add the final public website URL here once deployment is complete:
+
+**Live website URL:** To be added after deployment.
+
+## 11. Changelog
+
+| Version | Changes |
+|---|---|
+| Initial project | Created the bakery website pages and initial styling. |
+| Development update | Expanded the project documentation, added setup instructions, a file structure, testing checklist and GitHub upload guidance. |
+| Future updates | Record each completed feature, correction or design change here with its date. |
+
+Update this table whenever changes are made. The changelog should describe work that is actually present in the repository.
+
+## 12. References
+
+List every external source that was actually used for code, learning, images, fonts, icons or libraries. The following official resources can be used as references when relevant:
+
+- MDN Web Docs. HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
+- MDN Web Docs. CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
+- MDN Web Docs. JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- Google Search Central. SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+- Leaflet. Documentation: https://leafletjs.com/reference.html (only if Leaflet is used)
+
+Add the date accessed and any other sources used, and acknowledge third-party images or assets where required.
+
+## 13. Academic integrity
+
+This project should represent the student's own understanding and development work. External sources, code examples, libraries and media assets must be acknowledged. Test and understand the code included in the final submission, and ensure that the documentation accurately describes the website that has been completed.
