@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Add the sitemap URL after the website has been deployed to its final domain.
